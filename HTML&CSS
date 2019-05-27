@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: cambria;
+          padding: 10px;
+          background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+          padding: 10px;
+          text-align: center;
+          background: white;
+        }
+
+        .header h1 {
+          font-size: 30px;
+        }
+
+        /* top navigation bar styling */
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        /* topnav links styling */
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        /* hover color change */
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        /* Design the search tab */
+        .topnav input[type=text] {
+          float: right;
+          padding: 6px;
+          border: none;
+          margin-top: 8px;
+          margin-right: 10px;
+          font-size: 17px;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {   
+          float: left;
+          width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+          float: left;
+          width: 25%;
+          background-color: #f1f1f1;
+          padding-left: 20px;
+        }
+
+        /* Fake image (news & popular news) */
+        .fakeimg {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+        }
+         .rightcolumn .news img {
+          width: 100%;
+          height: auto;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+          background-color: white;
+          padding: 20px;
+          margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Footer */
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: #ddd;
+          margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+          .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+          }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+          .topnav a {
+            float: none;
+            width: 100%;
+            float: left;
+          }
+        }
+        .row .card {
+          text-decoration: none;
+          color: black;
+        }
+      </style>
+    </head>
+  <body>
+
+    <div class="topnav">
+      <a href="https://edition.cnn.com/world" target="_blank">World</a>
+      <a href="https://edition.cnn.com/politics" target="_blank">US Politics</a>
+      <a href="https://edition.cnn.com/business"target="_blank">Business</a>
+      <a href="https://edition.cnn.com/entertainment" target="_blank">Entertainment</a>
+      <a href="https://edition.cnn.com/business/tech" target="_blank">Tech</a>
+      <a href="https://edition.cnn.com/sport" target="_blank">Sport</a>
+      <a href="https://edition.cnn.com/travel" target="_blank">Travel</a>
+      <a href="https://edition.cnn.com/style" target="_blank">Style</a>
+      <a href="https://edition.cnn.com/health" target="_blank">Health</a>
+      <a href="https://edition.cnn.com/videos" target="_blank">Video</a>
+      <input type="text" placeholder="Search">
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>WORLD NEWS</h2>
+          <h5>EU Elections updates as they unfold</h5>
+          <div class="news">
+            <p><img src="C:\Users\Chuks Egbo\Pictures\eupolls.PNG"></p>
+            <b><a href="https://edition.cnn.com/europe/live-news/european-elections-results-intl/index.html" style="text-decoration: none; color: black;" >Results are expected amid the rise of the far right and an increasingly messy Brexit, and turnout is up</a></b>
+            <p><a href="https://edition.cnn.com/2019/05/20/europe/guy-verhofstadt-interview-europe-lmcgee-intl/index.html" style="text-decoration: none; color: black;">Europe will 'die from inside' if populists win: Verhofstadt</a></p>
+            <p><a href="https://edition.cnn.com/2019/05/16/europe/european-elections-everything-you-need-to-know-intl/index.html" style="text-decoration: none; color: black;">What you need to know about the biggest multi-country election</a></p>
+            <p><a href="https://edition.cnn.com/2019/05/22/europe/jean-claude-juncker-interview-european-elections-intl/index.html" style="text-decoration: none; color: black;">Juncker lashes out at 'stupid nationalists' on eve of elections</a></p>
+          </div>
+        
+        </div>
+        <div class="card">
+          <h2>Around the World...</h2>
+          <div>
+            <img src="C:\Users\Chuks Egbo\Pictures\endchmar.PNG">
+
+          </div>
+          
+          <p>These schoolgirls want an end to child marriage. So they're fighting to change their country's constitution
+          <h5>By Bukola Adebayo, CNN: 
+            CNN is committed to covering gender inequality wherever it occurs in the world. This story is part of As Equals, an ongoing series.
+            Lagos, Nigeria — In a plush living room of a home in a wealthy suburb of Lagos, three teenagers are huddled around a computer.
+            Kudirat Abiola, 15, Temitayo Asuni, 15 and Susan Ubogu, 16, want to change the law on child marriage in Nigeria and they're deep in discussion, even ignoring calls to break for a hearty Sunday lunch of jollof rice and southern fried chicken.
+            More than a third of girls in Nigeria end up in child marriages, and with 22 million married before the age of 18, the nation has among the highest number of child brides in Africa, according to a 2018 UNICEF report.
+            The girls are checking an online petition they've started. They know it's a tall order to get lawmakers to close the legal loopholes that currently enable men to enter marriages with girls under 18. But they are unfazed by things others their age might be.
+          </h5>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="news">
+            <img src="C:\Users\Chuks Egbo\Pictures\badpriest.PNG">
+            <a href="https://edition.cnn.com/2019/05/26/europe/poland-catholic-church-abuse-intl/index.html" style="text-decoration: none;">Catholic priests confronted by alleged sex abuse victims</a>
+          </div>
+          
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="news1">
+            <img src="C:\Users\Chuks Egbo\Pictures\federer.PNG" width="100%" height="auto">
+            <a href="https://edition.cnn.com/2019/05/26/tennis/federer-french-open-open-court-tennis-return-int-spt/index.html" style="text-decoration: none;">Federer makes winning French Open return after 4-year absence</a><p></p>
+          </div>
+          <div class="news2">
+            <img src="C:\Users\Chuks Egbo\Pictures\disbrkt.PNG">
+            <a href="https://edition.cnn.com/2019/05/25/opinions/measles-vaccine-spread-of-misinformation-guthrie/index.html" style="text-decoration: none;">The two viral breakouts plaguing our country</a>
+          </div>
+          
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>
